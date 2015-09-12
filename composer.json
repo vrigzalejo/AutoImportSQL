@@ -1,0 +1,12 @@
+{
+  "name": "vrigzalejo/autoimportsql",
+  "description": "Import various SQLs automatically",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Brigido Alejo",
+      "email": "brigsalejo@gmail.com"
+    }
+  ]
+}
