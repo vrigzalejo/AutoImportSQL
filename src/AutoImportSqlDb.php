@@ -65,6 +65,6 @@ abstract class AutoImportSqlDb
      */
     private function configFile( $config )
     {
-        return dirname( __FILE__ ) . '/configs/' . $config . '.php';
+        return dirname( __FILE__ ) . '/configs/database/' . $config . '.php';
     }
 }
