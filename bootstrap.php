@@ -10,9 +10,9 @@ return spl_autoload_register( function ( $class ) {
 
     if( PHP_MAJOR_VERSION === 7 ) {
         define( 'COMMON_CONFIG', require( dirname( __FILE__ ) . '/src/configs/common.php' ) );
+        $common = COMMON_CONFIG;
 
-        /* Uncomment the 2 lines below if you're using PHP 7 */
-        // \AutoImportSql\AutoImportSqlCommon::setCommonConfig( COMMON_CONFIG );
+        /* Uncomment the line below if you're using PHP 7 */
         // ( empty( $common[ 'app' ] ) ) ? $appName = 'AutoImportSQL' : $appName = COMMON_CONFIG[ 'app' ];
 
     } else {
@@ -48,7 +48,7 @@ return spl_autoload_register( function ( $class ) {
         }
     }
 
-    \AutoImportSql\AutoImportSqlCommon::setCommonConfig( $common );
+    AutoImportSql\AutoImportSqlCommon::setCommonConfig( $common );
 
 } );
 
