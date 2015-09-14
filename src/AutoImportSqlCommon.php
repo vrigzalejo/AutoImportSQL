@@ -15,7 +15,12 @@ class AutoImportSqlCommon
 
     public static function setCommonConfig( $commonConfig )
     {
-        self::$app = $commonConfig;
+        self::$app = new \stdClass();
+
+        foreach( $commonConfig as $confKey => $confVal ) {
+            self::$app->{$confKey} = $confVal;
+        }
+
     }
 
 }
